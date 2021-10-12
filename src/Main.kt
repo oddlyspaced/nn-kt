@@ -1,5 +1,7 @@
 import supervised.Adaline
 import supervised.Perceptron
+import unsupervised.Backpropagation
+import unsupervised.KSom
 
 fun main() {
 //    println("Hello World")
@@ -26,10 +28,10 @@ fun main() {
 
 //    val input =
 //        arrayOf(
+//            arrayOf(1.0, 1.0, -1.0, -1.0),
+//            arrayOf(1.0, -1.0, 1.0, -1.0),
+//            arrayOf(-1.0, -1.0, -1.0, 1.0),
 //            arrayOf(1.0, 1.0, 1.0, 1.0),
-//            arrayOf(-1.0, 1.0, -1.0, -1.0),
-//            arrayOf(1.0, 1.0, 1.0, -1.0),
-//            arrayOf(1.0, -1.0, -1.0, 1.0),
 //        )
 //    val output = arrayOf(1.0, 1.0, -1.0, -1.0)
 //    val weights = arrayOf(0.0, 0.0, 0.0, 0.0)
@@ -66,24 +68,32 @@ fun main() {
 //        alpha
 //    ).calculate(1)
 
-    val input =
-        arrayOf(
-            arrayOf(1.0, 1.0),
-            arrayOf(1.0, -1.0),
-            arrayOf(-1.0, 1.0),
-            arrayOf(-1.0, -1.0),
-        )
-    val output = arrayOf(-1.0, 1.0, -1.0, -1.0)
-    val weights = arrayOf(0.2, 0.2)
-    val bias = 0.2
-    val alpha = 0.2
+//    val input =
+//        arrayOf(
+//            arrayOf(1.0, 1.0),
+//            arrayOf(1.0, -1.0),
+//            arrayOf(-1.0, 1.0),
+//            arrayOf(-1.0, -1.0),
+//        )
+//    val output = arrayOf(-1.0, 1.0, -1.0, -1.0)
+//    val weights = arrayOf(0.2, 0.2)
+//    val bias = 0.2
+//    val alpha = 0.2
+//
+//    Adaline(
+//        input,
+//        output,
+//        weights,
+//        bias,
+//        alpha
+//    ).calculate(2)
 
-    Adaline(
-        input,
-        output,
-        weights,
-        bias,
-        alpha
-    ).calculate(2)
+    // ==========
+
+//    Backpropagation().calculate()
+
+    // =========
+
+    KSom().calculate()
 
 }
